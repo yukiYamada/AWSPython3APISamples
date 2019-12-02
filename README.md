@@ -1,13 +1,19 @@
-# AWSPython3APISamples
-aws api samples for python3
+# AWSPython3APISamples  
+aws api samples for python3  
 
-Requirement
-awscli
-Boto3
-	example:pip3 install
-  		pip3 install awscli
- 		pip3 install boto3
-awscli credential setup
-	exaple:awscli credential setup
-		look this 'https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-profiles.html'
-	this sample use user_name('user1') to read credential
+# Requirement  
+## awscli  
+ pip3 install awscli  --upgrade --user
+## Boto3  
+ pip3 install boto3
+
+## awscli credential setup  
+ awscli credential setup  
+ look this 'https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-profiles.html'  
+ this sample use user_name('user1') to read credential  
+### example profile
+ [user1]
+ aws_access_key_id = **********
+ aws_secret_access_key = **********
+ region = us-east-1
+	
