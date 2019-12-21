@@ -6,7 +6,7 @@ import sys
 import subprocess
 from tempfile import gettempdir
 
-session = Session(profile_name="user1")
+session = Session(profile_name="default")
 polly = session.client("polly")
 
 def execute():
