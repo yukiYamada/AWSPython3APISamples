@@ -10,9 +10,9 @@ aws api samples for python3
 ## awscli credential setup  
  awscli credential setup  
  look this 'https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-profiles.html'  
- this sample use user_name('user1') to read credential  
+ this sample use user_name('default') to read credential  
 ### example profile
- [user1]
+ [default]
  aws_access_key_id = **********
  aws_secret_access_key = **********
  region = us-east-1
