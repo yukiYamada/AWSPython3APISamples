@@ -6,10 +6,8 @@ import sys
 import subprocess
 from tempfile import gettempdir
 
-session = Session(profile_name="default")
-polly = session.client("polly")
 
-def execute():
+def execute(profile_name="default"):
     """
     execute polly api Synthesize_speech.
     
@@ -17,7 +15,8 @@ def execute():
     -----------------------------------
     audioStream(bytes)
     """
-    
+    session = Session(profile_name=profile_name)   
+    polly = session.client("polly")
     try:
         response = polly.synthesize_speech(Text="Hello World!", OutputFormat="mp3", VoiceId="Joanna")
 
